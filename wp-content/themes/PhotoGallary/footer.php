@@ -1,4 +1,4 @@
-
+</div>
 
         <footer class="bg-primary">
             <p class="text-center text-white p-3">PhotoGallaryTheme copyright@ 2020</p>

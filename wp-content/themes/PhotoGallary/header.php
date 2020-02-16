@@ -34,3 +34,13 @@
             </form>
 
         </nav>
+          <div class="row mt-4">
+            <div class="col-md-3 mb-3">
+                <ul class="list-group">
+                    <li class="list-group-item">Nature</li>
+                    <li class="list-group-item">Animal</li>
+                    <li class="list-group-item">Morbi leo risus</li>
+                    <li class="list-group-item">Porta ac consectetur ac</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+            </div>
