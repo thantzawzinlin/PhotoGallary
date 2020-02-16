@@ -34,6 +34,7 @@
             </form>
 
         </nav>
+        
           <div class="row mt-4">
             <div class="col-md-3 mb-3">
                 <ul class="list-group">
@@ -44,3 +45,5 @@
                     <li class="list-group-item">Vestibulum at eros</li>
                 </ul>
             </div>
+            <div class="col-md-9">
+                <div class="row">

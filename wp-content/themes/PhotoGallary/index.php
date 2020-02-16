@@ -5,7 +5,7 @@
                 <?php get_template_part('content',get_post_format()); ?>
             <?php endwhile; ?>
         <?php else : ?>
-            <?php  echo wpautop('Sorry,There were no posts'); ?>
+            <?php  wpautop('Sorry,There were no posts'); ?>
         <?php endif; ?> 
            
 
