@@ -6,7 +6,7 @@
             <p class="text-center text-white p-3">PhotoGallaryTheme copyright@ 2020</p>
         </footer>
 
-
+  <?php wp_footer() ?>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

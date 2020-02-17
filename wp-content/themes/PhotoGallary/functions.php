@@ -1,5 +1,5 @@
 <?php
-
+require_once('widgets/class-wp-widget-categories.php');
 
 //Theme Support
 
@@ -18,8 +18,17 @@ function excerpt_length(){
 }
 add_filter('excerpt_length','excerpt_length');
 
-//  function set_excerpt_length(){
-//      return 25;
-//  }
-//  add_filter('excerpt_length','set_excerpt_length'); 
- 
+// Widget Locations 
+function init_widget($id){
+    register_sidebar(array(
+        'name'=>'Sidebar',
+        'id'=>'sidebar'
+    ));
+}
+add_action('widgets_init','init_widget');
+
+//Register Widget
+function custom_register_widgets(){
+    register_widget('WP_Widget_Categoires_Custom');
+}
+add_action('widgets_init','custom_register_widgets');

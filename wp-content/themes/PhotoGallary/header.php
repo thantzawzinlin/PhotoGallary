@@ -28,22 +28,26 @@
                 </li> -->
 
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <form class="form-inline my-2 my-lg-0" method="get" action="<?php echo esc_url(home_url('/')); ?>">
+                <input class="form-control mr-sm-2" name= "s" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
 
         </nav>
         
           <div class="row mt-4">
-            <div class="col-md-3 mb-3">
-                <ul class="list-group">
-                    <li class="list-group-item">Nature</li>
-                    <li class="list-group-item">Animal</li>
-                    <li class="list-group-item">Morbi leo risus</li>
-                    <li class="list-group-item">Porta ac consectetur ac</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
-                </ul>
+            <div class="col-md-3 mb-3 ">
+                
+               <!-- <li class="list-group-item"> -->
+              
+                   <?php if(is_active_sidebar('sidebar')) : ?>
+                        
+                            <?php dynamic_sidebar('sidebar'); ?>
+                        
+                   <?php endif; ?>
+               
+             <!-- </li>    -->
+                
             </div>
             <div class="col-md-9">
                 <div class="row">
